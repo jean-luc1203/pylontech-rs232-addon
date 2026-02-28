@@ -1,7 +1,7 @@
 ---
 configuration:
   # Pylontech Configuration Section
-  Pylontech_path:
+  pylontech_path:
     name: "🟪 Pylontech → Chemin du Port Série"
     description: "Chemin vers le port série où le Pylontech est connecté (Menu: Paramètres-Matériel-Tout le matériel)."
     
