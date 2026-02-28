@@ -1,0 +1,65 @@
+---
+name: "Pylontech RS232 wired management"
+version: 0.0.1
+slug: "smartphoton_pylontech"
+description: Pylontech Management via RS32 or TCP/IP Gateway
+url: https://domosimple.eu/forum/
+ingress: false
+ingress_stream: false
+panel_icon: mdi:sitemap
+init: false
+homeassistant: 2025.10.1
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+privileged:
+  - NET_ADMIN
+  - SYS_RAWIO
+ports:
+  "1894/tcp": 1894
+ports_description:
+  "1894/tcp": Web interface
+hassio_api: true
+hassio_role: manager
+homeassistant_api: true
+host_network: true
+auth_api: true
+uart: true
+map:
+  - config:rw
+  - media:rw
+  - share:rw
+
+options:
+  # ylontech Configuration
+  pylontech_path: "/dev/serial/by-id/usb-xxxx_USB_Serial-abcdefghij"
+  use_gateway: false
+  gateway_ip_port: "192.168.1.100:5000"
+  communication_debug: false
+
+  # MQTT Configuration
+  mqttadresse_port: "core-mosquitto.local.hass.io:1883"
+  mqttuser: "username"
+  mqttpass: "password"
+
+  # Telemetry
+  Send_bip: true
+
+schema:
+  # Pylontech Configuration
+  pylontech_path: str
+  use_gateway: bool
+  gateway_ip_port: str?
+  communication_debug: bool
+
+  # MQTT Configuration
+  mqttadresse_port: str?
+  mqttuser: str?
+  mqttpass: password?
+
+  # Telemetry
+  Send_bip: bool
+
