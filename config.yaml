@@ -34,7 +34,7 @@ map:
   - share:rw
 
 options:
-  # ylontech Configuration
+  # Pylontech Configuration
   pylontech_path: "/dev/serial/by-id/usb-xxxx_USB_Serial-abcdefghij"
   use_gateway: false
   gateway_ip_port: "192.168.1.100:5000"
