@@ -1,5 +1,8 @@
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/c9f92443-dd9b-49ed-8d21-f4ef1a261368" />
 
-<img width="160" height="160" alt="image" src="https://github.com/user-attachments/assets/ce236969-3ce1-43ef-8df4-eab46404babb" />
+<img width="368" height="295" alt="image" src="https://github.com/user-attachments/assets/e4fd184a-0526-4f0e-84fd-7cb76c8d429b" />
+
+
 
 # Connect Pylontech to Home Assistant and MQTT Broker
 
